@@ -49,6 +49,7 @@ body * {
 
 h1 {
 	font-size: 5em;
+	margin-top: 0;
 }
 
 .coutdown {
