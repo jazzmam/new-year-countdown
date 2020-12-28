@@ -2,11 +2,16 @@ const daysElement = document.getElementById('days');
 const hoursElement = document.getElementById('hours');
 const minutesElement = document.getElementById('minutes');
 const secondsElement = document.getElementById('seconds');
-const coutdown = document.getElementById('coutdown');
+const coutdownElement = document.getElementById('coutdown');
+const yearElement = document.getElementById('year');
 
 const currentYear = new Date().getFullYear();
+const nextYear = currentYear + 1;
 
 const newYearTime = new Date(`January 01 ${currentYear + 1} 00:00:00`);
+
+// Set Title-year
+yearElement.innerHTML = nextYear;
 
 
 function updateCoutdown() {
