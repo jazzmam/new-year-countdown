@@ -52,11 +52,18 @@ h1 {
 	margin-top: 0;
 }
 
+.year {
+	font-size: 15em;
+	opacity: 0.4;
+	position: relative;
+}
+
 .coutdown {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	transform: scale(2);
+	margin: 0 0 40px;
 }
 
 .time {
@@ -76,6 +83,10 @@ h1 {
 		font-size: 4em;
 		margin: 0 0 50px;
 	}
+
+	.year {
+		font-size: 9em;
+	}
 	
 	.time {
 		margin: 10px 5px;
@@ -85,12 +96,16 @@ h1 {
 
 @media(max-width: 360px) {
 	h1 {
-		font-size: 2em;
+		font-size: 1.5em;
 		margin: 0 0 40px;
+	}
+
+	.year {
+		font-size: 5em;
 	}
 	
 	.time {
-		margin: 10px 5px;
-		font-size: 0.8em;
+		margin: 5px 3px;
+		font-size: 0.6em;
 	}
 }
