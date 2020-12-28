@@ -1,7 +1,7 @@
-const days = document.getElementById('days');
-const hours = document.getElementById('hours');
-const minutes = document.getElementById('minutes');
-const seconds = document.getElementById('seconds');
+const daysElement = document.getElementById('days');
+const hoursElement = document.getElementById('hours');
+const minutesElement = document.getElementById('minutes');
+const secondsElement = document.getElementById('seconds');
 const coutdown = document.getElementById('coutdown');
 
 const currentYear = new Date().getFullYear();
@@ -13,13 +13,16 @@ function updateCoutdown() {
     const currentTime = new Date();
     const remainingTimeMiliseconds = newYearTime - currentTime;
 
-    const days = Math.floor(remainingTimeMiliseconds / 1000 / 60 / 60 / 24);
-    const hours = Math.floor(remainingTimeMiliseconds / 1000 / 60 / 60);
-    const minutes = Math.floor(remainingTimeMiliseconds / 1000 / 60);
-    const seconds = Math.floor(remainingTimeMiliseconds / 1000);
+    const daysRemaining = Math.floor(remainingTimeMiliseconds / 1000 / 60 / 60 / 24);
+    const hoursRemaining = Math.floor(remainingTimeMiliseconds / 1000 / 60 / 60) % 24;
+    const minutesRemaining = Math.floor(remainingTimeMiliseconds / 1000 / 60) % 60;
+    const secondsRemaining = Math.floor(remainingTimeMiliseconds / 1000) % 60;
 
-    console.log(seconds);
+    daysElement.innerHTML = daysRemaining;
+    hoursElement.innerHTML = hoursRemaining;
+    minutesElement.innerHTML = minutesRemaining;
+    secondsElement.innerHTML = secondsRemaining;
 }
 
-updateCoutdown();
 
+setInterval(updateCoutdown, 1000);
