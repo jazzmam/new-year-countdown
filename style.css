@@ -48,12 +48,12 @@ body * {
 }
 
 h1 {
-	font-size: 5em;
-	margin-top: 0;
+	font-size: 3em;
+	margin: 20px 0 50px;
 }
 
 .year {
-	font-size: 17em;
+	font-size: 18em;
     opacity: 0.5;
 	position: relative;
 }
@@ -80,7 +80,7 @@ h1 {
 
 @media(max-width: 768px) {
 	h1 {
-		font-size: 4em;
+		font-size: 2em;
 		margin: 0 0 50px;
 	}
 

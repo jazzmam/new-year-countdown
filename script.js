@@ -4,6 +4,7 @@ const minutesElement = document.getElementById('minutes');
 const secondsElement = document.getElementById('seconds');
 const coutdownElement = document.getElementById('coutdown');
 const yearElement = document.getElementById('year');
+const spinnerElement = document.getElementById('spinner');
 
 const currentYear = new Date().getFullYear();
 const nextYear = currentYear + 1;
@@ -29,5 +30,9 @@ function updateCoutdown() {
     secondsElement.innerHTML = secondsRemaining;
 }
 
+// Show spinner before loading
+setTimeout(() => {
+    spinnerElement.remove();
+}, 1000);
 
 setInterval(updateCoutdown, 1000);
