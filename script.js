@@ -33,6 +33,7 @@ function updateCoutdown() {
 // Show spinner before loading
 setTimeout(() => {
     spinnerElement.remove();
+    coutdownElement.style.display = 'flex';
 }, 1000);
 
 setInterval(updateCoutdown, 1000);

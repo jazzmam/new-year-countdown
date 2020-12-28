@@ -47,19 +47,14 @@ body * {
 	transform: translate(-50%, -50%);
 }
 
-h1 {
-	font-size: 3em;
-	margin: 20px 0 50px;
-}
-
 .year {
-	font-size: 18em;
+	font-size: 20em;
     opacity: 0.5;
 	position: relative;
 }
 
 .coutdown {
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
 	transform: scale(2);
@@ -79,11 +74,6 @@ h1 {
 }
 
 @media(max-width: 768px) {
-	h1 {
-		font-size: 2em;
-		margin: 0 0 50px;
-	}
-
 	.year {
 		font-size: 9em;
 	}
@@ -95,11 +85,6 @@ h1 {
 }
 
 @media(max-width: 360px) {
-	h1 {
-		font-size: 1.5em;
-		margin: 0 0 40px;
-	}
-
 	.year {
 		font-size: 5em;
 	}
