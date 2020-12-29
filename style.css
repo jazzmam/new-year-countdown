@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	overflow-x: hidden;
+}
+
 body {
 	background-image: url('https://images.unsplash.com/photo-1546435107-91bf5fab68cb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');	
 	background-repeat: no-repeat;
@@ -48,7 +52,8 @@ body * {
 }
 
 .year {
-	font-size: 20em;
+	display: none;
+	font-size: 22em;
     opacity: 0.5;
 	position: relative;
 }
@@ -58,7 +63,7 @@ body * {
 	align-items: center;
 	justify-content: center;
 	transform: scale(2);
-	margin: 0 0 40px;
+	margin: 40px 0 60px;
 }
 
 .time {
@@ -73,9 +78,15 @@ body * {
 	margin: 0 0 5px;
 }
 
+.spinner {
+	height: 12em;
+	width: 12em;
+	opacity: 0.6;
+}
+
 @media(max-width: 768px) {
 	.year {
-		font-size: 9em;
+		font-size: 12em;
 	}
 	
 	.time {

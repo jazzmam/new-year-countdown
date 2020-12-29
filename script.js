@@ -33,6 +33,7 @@ function updateCoutdown() {
 // Show spinner before loading
 setTimeout(() => {
     spinnerElement.remove();
+    yearElement.style.display = 'flex';
     coutdownElement.style.display = 'flex';
 }, 1000);
 
