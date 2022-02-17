@@ -1,4 +1,4 @@
-<h3>My New Year Countdown JS app </h3>
+<h3>New Year Countdown JS app </h3>
 <br />
 <br />
 
@@ -11,6 +11,8 @@ To accustom myself to JS syntax 🎊 🎉
 Why building a New Year Countdown?
 
 It's a one-pager that can be built quickly. Seeing the accomplished result encouraged me to continue learning 💎
+<br />
+<br />
 <br />
 <br />
 <img width="628" alt="Countdown" src="https://user-images.githubusercontent.com/13553576/154533617-e69dd262-b033-4740-8983-77679088c379.png">
